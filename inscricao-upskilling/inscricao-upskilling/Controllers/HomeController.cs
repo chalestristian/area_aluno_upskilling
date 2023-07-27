@@ -4,6 +4,7 @@ using System;
 using System.CodeDom;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Threading.Tasks;
 using System.Web;
 using System.Web.Mvc;
@@ -58,11 +59,12 @@ namespace inscricao_upskilling.Controllers
                     cmd.ExecuteNonQuery();
                 }
                 con.Close();
-                
+
                 return View();
 
             }
-         }
+        }      
+
 
         public ActionResult Contact()
         {
